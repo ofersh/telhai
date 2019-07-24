@@ -1,0 +1,171 @@
+<html>
+<head>
+<meta name="verify-v1" content="D6TvFCFuTRSGLw34+gbPKUYEx1nK4R4A3He97RrWb+o=" />
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Niching in Evolution Strategies</title>
+<base href="http://cs.telhai.ac.il/~ofersh/NichingES/">
+<meta name="keywords" content="Niching, Evolution Strategies, ES, Ofer Shir, Literature">
+<meta name="description" content="Introduction to Niching in Evolution Strategies">
+</head>
+
+<body>
+
+<p><font size="5" face="Arial">Niching in Evolution Strategies: An Introduction (Last Update: 2012)</font></p>
+<p><font size="4" face="Arial"><a target="_blank" href="http://cs.telhai.ac.il/~ofersh/">Ofer M. 
+Shir, PhD</a></font></p>
+<p><font face="Arial"><i>Evolutionary Algorithms </i>(EAs), popular population-based stochastic 
+search-methods, have the tendency to lose diversity within their population of 
+feasible solutions and to converge into a single solution. <i>Niching methods</i>, 
+the extension of EAs to multi-modal optimization, address this issue by 
+maintaining the diversity of certain properties within the population - and this 
+way they allow parallel convergence into multiple good solutions in multimodal 
+domains. To this end, niching methods have been studied mainly within the field 
+of Genetic Algorithms (GAs). The research in this direction has yielded various 
+successful methods which have been shown to find multiple solutions efficiently, 
+but naturally were limited to low-dimensional real-valued problems. <i>Evolution 
+Strategies </i>(ES) are a canonical EA for real-valued function optimization, 
+due to their straightforward encoding, their specific variation operators, the 
+self-adaptation of their mutation distribution as well as to their high 
+performance in this domain in comparison with other methods on benchmark 
+problems. The higher the dimensionality of the search space, the more suitable a 
+task becomes for an ES. </font> </p>
+<p><font face="Arial">The study of niching is challenging both from the theoretical point of view 
+and from the practical point of view. The theoretical challenge is two-fold - 
+maintaining the diversity within a population-based stochastic algorithm from 
+the computational perspective, but also having an insight into <i>speciation 
+theory </i>from the biological perspective. The practical aspect provides a 
+real-world motivation for this problem - there is an increasing interest of the 
+applications' community in providing the decision maker with multiple solutions 
+with different <i>conceptual designs</i>, for single- or multi-objective 
+search spaces.</font></p>
+<p align="left"><font face="Arial"><font size="4">
+<a href="http://cs.telhai.ac.il/~ofersh/NichingES/100m.jpg">
+<img border="0" src="http://cs.telhai.ac.il/~ofersh/NichingES/100m.jpg" width="442" height="253"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><img border="0" src="http://cs.telhai.ac.il/~ofersh/NichingES/C21_Speciation_2.GIF" width="266" height="259"><font size="4"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="http://cs.telhai.ac.il/~ofersh/NichingES/Butterflies.jpg" width="258" height="256"></font></font></p>
+<p align="left"><b><font size="2" face="Arial">[LEFT] An analogy: find the best runners with the highest genetic diversity among 
+each other.&nbsp;&nbsp;[CENTER] <a href="http://www.brooklyn.cuny.edu/bc/ahp/LAD/C21/C21_Speciation.html" target="_about">
+Natural speciation: illustration</a>.&nbsp;&nbsp;[RIGHT] Speciation table: butterflies.</font></b></p>
+<p><font size="5" face="Arial">Literature</font></p>
+<p><font size="4" face="Arial">Niching in Evolutionary Algorithms</font></p>
+<ul>
+	<li><font face="Arial">Shir, O.M.: Niching in Evolutionary Algorithms. In: Handbook of Natural Computing: Theory, Experiments, and Applications. Springer-Verlag, Berlin-Heidelberg, Germany (2012) 1035-1069</font></li>
+	</ul>
+<p><font size="4" face="Arial">Evolution Strategies</font></p>
+<ul>
+	<li><font face="Arial">Th. B&auml;ck. Evolutionary algorithms in 
+	theory and practice. Oxford University Press, New York, NY, USA, 1996.</font></li>
+	<li><font face="Arial">H.-G. Beyer and H.-P. Schwefel. Evolution strategies a comprehensive 
+	introduction. <b>Natural Computing: an international journal</b>, 1(1), 2002. </font></li>
+</ul>
+<p><font face="Arial"><i>Derandomized </i>Evolution Strategies</font></p>
+<ul>
+	<li><font face="Arial">N. Hansen and A. Ostermeier. Completely derandomized self-adaptation in 
+	evolution strategies. <b>Evolutionary Computation</b>, 9(2), 2001. (CMA-ES)</font></li>
+	<li><font face="Arial">C. Igel, T. Suttorp, and N. Hansen. A computational efficient covariance 
+	matrix update and a (1+1)-CMA for evolution strategies. In Proceedings of 
+	the Genetic and Evolutionary Computation Conference (GECCO 2006). ACM Press, 2006.</font></li>
+	<li><font face="Arial">N. Hansen, A. Ostermeier, and A. Gawelczyk. On the adaptation of 
+	arbitrary normal mutation distributions in evolution strategies: The 
+	generating set adaptation. In Proceedings of the Sixth International 
+	Conference on Genetic Algorithms (ICGA6), 1995. </font></li>
+	<li><font face="Arial">A. Ostermeier, A. Gawelczyk, and N. Hansen. Step-size adaptation based 
+	on non-local use of selection information. In Parallel Problem Solving from 
+	Nature (PPSN3), 1994.</font></li>
+	<li><font face="Arial">A. Ostermeier, A. Gawelczyk, and N. Hansen. A derandomized approach to 
+	self adaptation of evolution strategies. Technical report, 1993.</font></li>
+</ul>
+<p><font size="4" face="Arial">Classical Niching Concepts</font></p>
+<ul>
+	<li><font face="Arial">S. Mahfoud. Niching Methods for Genetic Algorithms. PhD thesis, 
+	University of Illinois at Urbana Champaign, 1995. 
+	</font> </li>
+	<li><font face="Arial">K.A de Jong.: An analysis of the behavior of a class of genetic adaptive 
+	systems. PhD thesis, 1975.</font></li>
+	<li><font face="Arial">D. E. Goldberg and J. Richardson. Genetic algorithms with sharing for 
+	multimodal function optimization. In Proceedings of the Second International 
+	Conference on Genetic Algorithms on Genetic algorithms and their 
+	application, Mahwah, NJ, USA, 1987. Lawrence Erlbaum Associates, Inc.</font></li>
+	<li><font face="Arial">B. Miller and M. Shaw. Genetic algorithms with dynamic niche sharing for 
+	multimodal function optimization. In Proceedings of the 1996 IEEE 
+	International Conference on Evolutionary Computation (ICEC'96), New York, 
+	NY, USA, 1996. </font></li>
+</ul>
+<p><font size="4" face="Arial">Niching in Evolution Strategies</font></p>
+<ul>
+	<li><font face="Arial">Ofer M. Shir and Thomas B&auml;ck. Niching with 
+	Derandomized Evolution Strategies in Artificial and Real-World Landscapes.
+	<b>Natural Computing: An International Journal</b>, Springer. <b>8</b>(1) (2009) 171--196 </font></li>
+	<li><font face="Arial">Ofer M. Shir, PhD Dissertation: Niching in 
+	Derandomized Evolution Strategies and its Applications in Quantum Control; A 
+	Journey from Organic Diversity to Conceptual Quantum Designs. Thesis 
+	Universiteit Leiden. ISBN: 978-90-6464-256-2. Printed in The Netherlands, 
+	2008. <a href="http://cs.telhai.ac.il/~ofersh/OferMichaelShir_PhDmanuscript.pdf">
+	pdf</a></font></li>
+</ul>
+<p><font size="4" face="Arial">The Niche Radius Problem</font></p>
+<ul>
+	<li><font face="Arial">Jelasity, M.: Uego, an abstract niching technique for global 
+	optimization. In: Parallel Problem Solving from Nature - PPSN V. Volume 
+	1498., Amsterdam, Springer (1998) </font></li>
+	<li><font face="Arial">Gan, J., Warwick, K.: Dynamic niche clustering: A fuzzy variable radius 
+	niching technique for multimodal optimisation in GAs. In: Proceedings of the 
+	2001 Congress on Evolutionary Computation CEC2001, COEX, World Trade Center, 
+	159 Samseong-dong, Gangnam-gu, Seoul, Korea, IEEE Press (2001) </font></li>
+	<li><font face="Arial">A.D. Cioppa, C.D. Stefano and A. Marcelli.: On the role of population 
+	size and niche radius in fitness sharing. <b>IEEE Trans. Evolutionary 
+	Computation</b> 8 (2004)</font></li>
+	<li><font face="Arial">Ofer M. Shir, Michael Emmerich and Thomas B&auml;ck. 
+	Adaptive Niche-Radii and Niche-Shapes Approaches for Niching with the 
+	CMA-ES. <b>Evolutionary Computation</b>, MIT Press. <b>18</b>(1) (2010) 97--126<br>
+&nbsp;</font></li>
+</ul>
+<p><font size="4" face="Arial">Clustering-Based </font></p>
+<ul>
+	<li><font face="Arial">F. Streichert, G. Stein, H. Ulmer and A. Zell. A clustering based niching ea for multimodal search spaces. 
+        In Proceedings of the International Conference Evolution Artificielle, volume 2936 of Lecture Notes in Computer Science, 2003.
+        </font></li>
+        <li><font face="Arial">O. Aichholzer, F. Aurenhammer, B. Brandtst&auml;tter, T. Ebner, H. Krasser, and C. Magele. Niching Evolution Strategy with Cluster Algorithms.
+	</font></li>
+</ul>
+<p><font size="4" face="Arial">Miscellaneous </font></p>
+<ul>
+        <li><font face="Arial">Deb, K., Goldberg, D.E.: An investigation of niche and species formation
+        in genetic function optimization. In: Proceedings of the third international
+        conference on Genetic algorithms, San Francisco, CA, USA, Morgan Kaufmann
+        Publishers Inc. (1989)</font></li>
+        <li><font face="Arial">M. Preuss, L. Sch&ouml;nemann and M.
+        Emmerich: Counteracting genetic drift and disruptive recombination in (&#956;,
+        &#955;)-ea on multimodal fitness landscapes. In: GECCO '05: Proceedings of the
+        2005 conference on Genetic and evolutionary computation, New York, NY, USA,
+        ACM Press (2005). </font></li>
+</ul>
+<font face="Arial">
+<br>
+</font>
+<font face="Arial">
+<br>
+</font><font size="5" face="Arial">Illustration: Niching in Action</font><ul>
+        <li><font face="Arial">Tracking 4 minima on the Fletcher-Powell n=2 landscape with the Mahalanobis-CMA+ routine: <a target="_blank" href="http://cs.telhai.ac.il/~ofersh/NichingES/Niching_2D_FletcherPowell.avi">avi</a>.</font></li>
+</ul> 
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10115263; 
+var sc_invisible=1; 
+var sc_security="440ed088"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify
+analytics" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10115263/0/440ed088/1/"
+alt="shopify analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+
+</html>
